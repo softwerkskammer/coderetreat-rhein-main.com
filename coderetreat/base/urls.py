@@ -2,6 +2,7 @@
 
 from django.conf.urls import patterns, include, url
 from django.views.generic.base import TemplateView
+from coderetreat import settings
 
 urlpatterns = patterns('',
     url(r"^$", TemplateView.as_view(template_name="home.html"),
@@ -10,4 +11,8 @@ urlpatterns = patterns('',
         name="learnmore"),
     url(r"^imprint", TemplateView.as_view(template_name="imprint.html"),
             name="imprint"),
+)
+
+urlpatterns += patterns('',
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 )
