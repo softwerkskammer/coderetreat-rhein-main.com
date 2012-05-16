@@ -4,7 +4,7 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 # Django settings for coderetreat project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -124,7 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'coderetreat.base',
+    'base',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -155,3 +155,8 @@ LOGGING = {
         },
     }
 }
+
+try:
+    import local_settings
+except:
+    pass
