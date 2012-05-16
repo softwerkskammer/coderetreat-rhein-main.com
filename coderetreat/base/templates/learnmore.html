@@ -2,4 +2,61 @@
 
 {% block learnmore_navitem_style %}active{% endblock %}
 
+{% block content %}
+    <div class="page-header">
+      <h1>What's a Coderetreat?</h1>
+    </div>
 
+    <div class="row">
+      <div class="span6">
+          <section>
+              <h2>History</h2>
+              <div class="row">
+                  <div class="span3">
+                      <p>Corey Haines, the initiator of the code retreat concept, used a nice metaphor to explain the concept of this thing called a ‘Coderetreat’. Developing software is a bit like playing an instrument. The big difference is that as a musician you take a lot of time practicing and only a fraction of your time performing on stage. As a developer at work, we are constantly on stage and we never take enough time to practice. In our day to day jobs we have the preassure to get things dune, causing us to rush. And so we try to cut corners, but sometimes we do not cut the corners in the best way because we never have time to explore some alternatives.</p>
+                  </div>
+                  <div class="span3">
+                      <img src="{{ STATIC_URL }}img/corey.jpg" alt="">
+                      <a href="http://www.flickr.com/photos/davidgiard/3187276048/">Photo by David Giard</a>
+                  </div>
+              </div>
+          </section>
+          <section>
+              <h2>The Goal</h2>
+                <p>The goal of a code retreat is to shrink the gap between your current level of your coding skills is and where you want them to be, by practicing the fundamentals of software design. We invite you to write the best code you can without the pressure to get things done. During the retreat we do <a href="http://en.wikipedia.org/wiki/Pair_programming">pair-programming</a>, which is wonderful because you can learn a lot from each other. We write our code using <a href="http://en.wikipedia.org/wiki/Test-driven_development">TDD</a> and complying to the <a href="http://agileinaflash.blogspot.de/2009/02/simple-design.html">rules of simple design</a>. We focus purely on writing great code, there is no pressure to actually produce a working solution for the problem.</p>
+          </section>
+          <section>
+              <h2>The Format</h2>
+              <p>The code retreat is held on a weekend day to enable everyone to participate without having to ask for permission from their employer, just from their partner. The format of a code retreat is as follows:
+              <ul>
+                  <li> Implement Conway’s Game of Life</li>
+                  <li> In each of the 45 minutes sessions write the best code you can with your pair</li>
+                  <li> After each session delete your code (We'll tell you why, if you show up!)</li>
+                  <li> Ten minutes of retrospective</li>
+                  <li> Five minutes break</li>
+                  <li> Change your pair</li>
+                  <li> Repeat</li>
+              </ul>
+
+              We have 3 sessions in the morning, after that we have lunch for 1h - 1h ½, and 3 more sessions in the afternoon. At the end we hold a big retrospective.
+
+              The code retreat is programming language agnostic, you can use any  language if you find somebody to pair with.
+              </p>
+          </section>
+          <section>
+              <h2>Thanks</h2>
+              <p>This text is almost completely and blatantly taken from http://agileminds.fikket.be/event/code-retreat Thanks to <a href="http://agileminds.fikket.be/event/code-retreat">Erik</a> for letting us do so.</p>
+          </section>
+
+      </div>
+      <div class="span6">
+          <section>
+              <h2>Watch Corey explain the Coderetreat concept</h2>
+              <iframe src="http://player.vimeo.com/video/18955165" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              <p>Corey gives an introduction to the purpose of Code Retreat and an introduction to Conway&#039;s Game Of Life.<br /> <br /> Shot on the Lean Dog boat on 1/16/2011 by Justin Searls (http://twitter.com/searls).</p>
+          </section>
+      </div>
+    </div>
+
+
+{% endblock %}
