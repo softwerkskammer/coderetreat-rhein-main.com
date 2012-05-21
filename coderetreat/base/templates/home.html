@@ -6,7 +6,8 @@
 
 {% block content %}
     <div class="hero-unit">
-      <h1>Coderetreat Rhein-Main</h1>
+        <h1 class="hidden-phone">Coderetreat Rhein-Main</h1>
+        <h2 class="visible-phone">Coderetreat Rhein-Main</h2>
         <img src="{{ STATIC_URL }}img/retrospective.jpg" alt=""/>
         <p>Join us for a day-long, intensive practice event, focusing on the fundamentals of software development and design.</p>
         <p><a class="btn btn-primary btn-large" href="{% url learnmore %}">Learn more &raquo;</a></p>
