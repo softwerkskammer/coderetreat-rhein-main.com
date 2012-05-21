@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         {% block content %}
         {% endblock %}
       <hr>
@@ -57,20 +57,7 @@
     </footer>
 
     </div>
-    {% comment %}
-        <script src="{{ STATIC_URL }}js/jquery.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-button.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-popover.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-scrollspy.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-tab.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-tooltip.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-carousel.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-collapse.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap-dropdown.js"></script>
-    {% endcomment %}
+    <script src="{{ STATIC_URL }}bootstrap/js/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
