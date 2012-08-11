@@ -9,8 +9,8 @@
         <h1 class="hidden-phone">Coderetreat Rhein-Main</h1>
         <h2 class="visible-phone">Coderetreat Rhein-Main</h2>
         <img src="{{ STATIC_URL }}img/retrospective.jpg" alt=""/>
-        <p>Join us for a day-long, intensive practice event, focusing on the fundamentals of software development and design.</p>
-        <p><a class="btn btn-primary btn-large" href="{% url learnmore %}">Learn more &raquo;</a></p>
+        <p>Join us for a day-long, intensive practice event and learn to refactor legacy code.</p>
+        <p><a class="btn btn-primary btn-large" href="{% url learnmore-legacy %}">Learn more &raquo;</a></p>
     </div>
 
     <div class="row-fluid">
@@ -18,9 +18,12 @@
           {% include "next.html" %}
       </div>
       <div class="span4">
-          <h2>Past Coderetreats</h2>
+          <h2>Previous Coderetreats</h2>
           <div>
           <ul>
+              <li>
+                  Coderetreat, September 2012
+              </li>
               <li>
                   <a href="http://mar2012.coderetreat-rhein-main.com/">
                       Legacy Coderetreat, March 2012
@@ -37,11 +40,6 @@
       <div class="span4">
         <h2>Sponsors</h2>
         <div class="row-fluid">
-          <div class="span6">
-              <a href="http://www.andrena.de">
-                  <img src="{{ STATIC_URL }}img/andrena.png" alt="">
-              </a>
-          </div>
           <div class="span6">
             <a href="http://www.namics.com">
               <img src="{{ STATIC_URL }}img/namics_logo_blau.jpg" alt="">

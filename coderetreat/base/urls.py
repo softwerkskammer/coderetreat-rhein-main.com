@@ -9,6 +9,8 @@ urlpatterns = patterns('',
         name="home"),
     url(r"^learnmore$", TemplateView.as_view(template_name="learnmore.html"),
         name="learnmore"),
+    url(r"^learnmore-legacy$", TemplateView.as_view(template_name="learnmore-legacy.html"),
+        name="learnmore-legacy"),
     url(r"^imprint", TemplateView.as_view(template_name="imprint.html"),
             name="imprint"),
 )
