@@ -7,6 +7,7 @@ SITENAME = u'Coderetreat Rhein-Main'
 SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
+THEME = "theme"
 
 DEFAULT_LANG = u'en'
 
@@ -14,18 +15,20 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+DISPLAY_PAGES_ON_MENU = False
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+LINKS =  (('Coderetreat Community Network', 'http://coderetreat.org/'),
+          ('Softwerkskammer Software Craftsmanship Communities', 'http://www.softwerkskammer.org'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+#SOCIAL = (('You can add links in your config file', '#'),
+#          ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 5
+TWITTER_USER = 'CodeRetreatFfm'
+
+ABOUT_TEXT = 'Join us for a day-long intensive practice event and hone the craft of software development.'
+ABOUT_IMAGE = 'images/retrospective.jpg'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
